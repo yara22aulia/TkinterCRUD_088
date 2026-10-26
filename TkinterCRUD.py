@@ -48,8 +48,7 @@ def submit_nilai():
     if [biologi, fisika, inggris].count(nilai_tertinggi) > 1:
         messagebox.showwarning(
             "Nilai Seri",
-            "Nilai tertinggi sama. Silakan periksa kembali nilai."
-        )
+            "Nilai tertinggi sama. Silakan periksa kembali nilai.")
         return
 
     if biologi == nilai_tertinggi:
