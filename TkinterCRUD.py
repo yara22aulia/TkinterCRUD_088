@@ -14,10 +14,11 @@ CREATE TABLE IF NOT EXISTS nilai_siswa (
     biologi REAL NOT NULL,
     fisika REAL NOT NULL,
     inggris REAL NOT NULL,
-    prediksi_fakultas TEXT NOT NULL
-)
+    prediksi_fakultas TEXT NOT NULL)
 """)
-conn.commit()
+conn.commit(
+    
+)
 
 
 # Fungsi submit nilai
