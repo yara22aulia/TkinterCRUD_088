@@ -4,7 +4,9 @@ import sqlite3
 
 # Membuat database
 conn = sqlite3.connect("nilai_siswa.db")
-cursor = conn.cursor()
+cursor = conn.cursor(
+    
+)
 
 # Membuat tabel
 cursor.execute("""
@@ -17,7 +19,7 @@ CREATE TABLE IF NOT EXISTS nilai_siswa (
     prediksi_fakultas TEXT NOT NULL)
 """)
 conn.commit(
-    
+
 )
 
 
