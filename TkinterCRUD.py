@@ -40,8 +40,7 @@ def submit_nilai():
     if not all(0 <= n <= 100 for n in [biologi, fisika, inggris]):
         messagebox.showwarning(
             "Peringatan",
-            "Nilai harus antara 0 sampai 100!"
-        )
+            "Nilai harus antara 0 sampai 100!")
         return
 
     nilai_tertinggi = max(biologi, fisika, inggris)
