@@ -89,8 +89,7 @@ judul = tk.Label(
     text="Aplikasi Prediksi Fakultas",
     font=("Helvetica", 16, "bold"),
     bg="#f0f4f7",
-    fg="#333333"
-)
+    fg="#333333")
 judul.pack(pady=20)
 
 # Frame input
