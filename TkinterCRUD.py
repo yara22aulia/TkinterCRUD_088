@@ -64,21 +64,17 @@ def submit_nilai():
         VALUES (?, ?, ?, ?, ?)
     """, (nama, biologi, fisika, inggris, prediksi))
 
-    conn.commit(
-        
-    )
+    conn.commit()
 
     hasil_label.config(
         text=f"Nama: {nama}\n"
              f"Biologi: {biologi:g} | Fisika: {fisika:g} | "
              f"Inggris: {inggris:g}\n"
-             f"Prediksi Fakultas: {prediksi}"
-    )
+             f"Prediksi Fakultas: {prediksi}")
 
     messagebox.showinfo(
         "Berhasil",
-        f"Data {nama} berhasil disimpan ke database!"
-    )
+        f"Data {nama} berhasil disimpan ke database!")
 
 
 # Membuat jendela utama
