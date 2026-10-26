@@ -21,9 +21,7 @@ conn.commit()
 
 # Fungsi submit nilai
 def submit_nilai():
-    nama = entry_nama.get().strip(
-        
-    )
+    nama = entry_nama.get().strip()
 
     try:
         biologi = float(entry_biologi.get())
@@ -32,8 +30,7 @@ def submit_nilai():
     except ValueError:
         messagebox.showerror(
             "Error",
-            "Nama dan semua nilai harus diisi dengan benar!"
-        )
+            "Nama dan semua nilai harus diisi dengan benar!")
         return
 
     if nama == "":
