@@ -64,7 +64,9 @@ def submit_nilai():
         VALUES (?, ?, ?, ?, ?)
     """, (nama, biologi, fisika, inggris, prediksi))
 
-    conn.commit()
+    conn.commit(
+        
+    )
 
     hasil_label.config(
         text=f"Nama: {nama}\n"
