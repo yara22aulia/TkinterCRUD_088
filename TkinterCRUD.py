@@ -4,9 +4,7 @@ import sqlite3
 
 # Membuat database
 conn = sqlite3.connect("nilai_siswa.db")
-cursor = conn.cursor(
-    
-)
+cursor = conn.cursor()
 
 # Membuat tabel
 cursor.execute("""
@@ -18,14 +16,14 @@ CREATE TABLE IF NOT EXISTS nilai_siswa (
     inggris REAL NOT NULL,
     prediksi_fakultas TEXT NOT NULL)
 """)
-conn.commit(
-
-)
+conn.commit()
 
 
 # Fungsi submit nilai
 def submit_nilai():
-    nama = entry_nama.get().strip()
+    nama = entry_nama.get().strip(
+        
+    )
 
     try:
         biologi = float(entry_biologi.get())
